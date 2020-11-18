@@ -52,3 +52,24 @@ Blockly.Blocks['matrix'] = {
     });
   }
 };
+
+Blockly.Blocks['matrix8x8'] = {
+  /**
+   * Block for matrix 8x8 value.
+   * @this Blockly.Block
+   */
+  init: function() {
+    this.jsonInit({
+      "message0": "%1",
+      "args0": [
+        {
+          "type": "field_matrix8x8",
+          "name": "MATRIX8X8"
+        }
+      ],
+      "outputShape": Blockly.OUTPUT_SHAPE_ROUND,
+      "output": "Number",
+      "extensions": ["colours_pen"]
+    });
+  }
+};
